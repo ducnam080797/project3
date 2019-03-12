@@ -1,0 +1,13 @@
+@import 'bootstrap';
+$light: white;
+$footer_text_color: black;
+
+header {
+    background-color: $light;
+}
+  
+footer {
+    background-color: $light;
+    font-weight: bold;
+}
+  

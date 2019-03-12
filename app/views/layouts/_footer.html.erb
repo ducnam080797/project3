@@ -5,6 +5,10 @@
       <span class="ml-auto">
         <%= "#{t ".contact"}: #{Settings[:email_contact]}" %>
       </span>
+      <ul id="nav">
+        <%= link_to_unless_current "English", locale: "en" %> | 
+        <%= link_to_unless_current "Vietnam", locale: "vi" %>
+      </ul>
     </div>
   </div>
 </footer>
