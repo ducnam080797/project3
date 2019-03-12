@@ -1,0 +1,17 @@
+vi:
+  layouts:
+    header:
+      sign_up: đăng ký
+      sign_in: đăng nhập
+    footer:
+      contact: liên hệ
+  users:
+    new:
+      sign_up: đăng ký
+  sessions:
+    new:
+      sign_in: đăng nhập
+    create:
+      invalid_email_password:  email mật khẩu không hợp lệ
+      login_successful: đăng nhập thành công
+

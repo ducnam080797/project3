@@ -2,6 +2,7 @@ source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "2.5.3"
+gem "bcrypt"
 gem "bootsnap", ">= 1.1.0", require: false
 gem "bootstrap"
 gem "bootstrap4-kaminari-views"
@@ -12,11 +13,13 @@ gem "coffee-rails", "~> 4.2"
 gem "config"
 gem "font-awesome-rails"
 gem "jbuilder", "~> 2.5"
+gem "jquery-rails", "~> 4.3", ">= 4.3.3"
 gem "kaminari"
 gem "mini_magick"
 gem "pg", "~> 0.18.4"
 gem "puma", "~> 3.11"
 gem "rails", "~> 5.2.2"
+gem "rails-i18n"
 gem "rubocop", "~> 0.54.0", require: false
 gem "sass-rails", "~> 5.0"
 gem "uglifier", ">= 1.3.0"

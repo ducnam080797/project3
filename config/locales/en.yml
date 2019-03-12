@@ -1,1 +1,16 @@
 en:
+  layouts:
+    header:
+      sign_up: Sign up
+      sign_in: Sign in
+    footer:
+      contact: Contact
+  users:
+    new:
+      sign_up: Sign up
+  sessions:
+    new:
+      sign_in: Sign in
+    create:
+      invalid_email_password: invalid email password
+      login_successful: login successful

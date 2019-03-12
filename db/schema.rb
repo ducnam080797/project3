@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_08_044701) do
+ActiveRecord::Schema.define(version: 2019_03_12_081446) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -73,9 +73,13 @@ ActiveRecord::Schema.define(version: 2019_03_08_044701) do
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "email"
+    t.string "account_name"
+    t.string "avatar"
+    t.boolean "admin"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "owner_id"
+    t.string "password_digest"
   end
 
   add_foreign_key "comments", "homes"
