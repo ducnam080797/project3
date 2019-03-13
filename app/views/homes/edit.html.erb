@@ -1,0 +1,27 @@
+<div class="row pt-4 pb-5">
+  <h3 class="m-auto"><%= t ".add_home" %></h3>
+</div>
+<div class="row" id="form_chapter">
+  <%= form_for @home, html: {class: "col-12"} do |f| %>
+    <%= f.label :name, class: "mt-2" %>
+    <%= f.text_field :name, class: "form-control" %>
+
+    <%= f.label :address, class: "mt-2" %>
+    <%= f.text_field :address, class: "form-control" %>
+
+    <%= f.label :room, class: "mt-2" %>
+    <%= f.text_field :room, class: "form-control" %>
+
+    <%= f.label :progress, class: "mt-2" %><br/>
+    <%= f.select :progress, Settings.progress_select_box, class: "form-control" %><br/>
+
+    <%= f.label :cover_image, class: "mt-2" %><br/>
+    <%= f.file_field :cover_image, accept: "image/jpeg,image/gif,image/png", id: "avatar-upload" %><br/>
+    <%= image_tag "", class: "img-thumbnail d-none mb-4", id: "img_prev", alt: "image preview" %><br/>
+
+    <%= f.label :description, class: "mt-2" %>
+    <%= f.text_field :description, class: "form-control" %>
+
+    <%= f.submit t(".save_story"), class: "btn btn-primary mt-3 mb-5" %>
+  <% end %>    
+</div>

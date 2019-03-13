@@ -1,6 +1,8 @@
 class User < ApplicationRecord
   has_many :comments
   has_many :interactives
+  has_many :home
+  has_many :bookinghome
   before_save :downcase_email, :downcase_account_name
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
   SIGNUP_PARAMS =

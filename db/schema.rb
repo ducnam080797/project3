@@ -39,6 +39,8 @@ ActiveRecord::Schema.define(version: 2019_03_12_081446) do
     t.integer "status"
     t.string "cover_image"
     t.string "description"
+    t.string "address"
+    t.integer "room"
     t.integer "liked", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -52,13 +54,6 @@ ActiveRecord::Schema.define(version: 2019_03_12_081446) do
     t.datetime "updated_at", null: false
     t.index ["home_id"], name: "index_interactives_on_home_id"
     t.index ["user_id"], name: "index_interactives_on_user_id"
-  end
-
-  create_table "owners", force: :cascade do |t|
-    t.string "address"
-    t.integer "room"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "reality_rents", force: :cascade do |t|
@@ -78,7 +73,6 @@ ActiveRecord::Schema.define(version: 2019_03_12_081446) do
     t.boolean "admin"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "owner_id"
     t.string "password_digest"
   end
 
