@@ -1,0 +1,26 @@
+<div class="row mt-5">
+  <div class="col-md-4 bg-primary p-3">
+    <h3><%= t ".story_information" %></h3>
+    <%= link_to t(".edit_story"), "#", class: "btn btn-warning", role: "button" %>
+    <%= link_to t(".delete_story"), @home, method: :delete,
+                                  data: {confirm: t(".are_you_sure")}, class: "btn btn-danger", role: "button" %>
+    <p> <%= t ".name" %>: <%= @home.name %></p>
+    <%= image_tag @home.cover_image.url if @story.cover_image? %>
+    <p><%= t ".address" %></p>
+    <p><%= @home.address %></p>
+    <p><%= t ".room" %></p>
+      <select>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+    <p><%= t ".description" %></p>
+    <p><%= @home.description %></p>
+
+    <button type="button" class="btn btn-primary d-inline"><%= t ".add_home" %></button>
+  </div>
+  <div class="col-md-8 bg-secondary">
+
+  </div>
+</div>

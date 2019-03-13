@@ -14,3 +14,6 @@ en:
     create:
       invalid_email_password: invalid email password
       login_successful: login successful
+  homes:
+    new:
+      save_home: Save home
